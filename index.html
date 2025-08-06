@@ -1,70 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <title>Tanvir Shakil Joy - Portfolio</title>
     <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="open-sans-normal">
-    <header class="header secondary-bg">
-        <nav>
-            <h3 class="nav-title">Ta<span class="text-primary">n</span>vir</h3>
-            <ul>
-                <li><a class="dark-2" href="">Portfolio</a></li>
-                <li><a class="dark-2" href="">Blog</a></li>
-                <li><a href=""><button class="btn-primary">Hire Me</button></a></li>
-            </ul>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">TSJ</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#achievements" class="nav-link">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </nav>
-        <div class="banner">
-            <div class="banner-content">
-                <h4 class="banner-greetings">Hi, I am</h4>
-                <h1 class="banner-title">Tanvir Shakil Joy</h1>
-                <p class="banner-description">
-                    Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved moments. 
-                </p>
-                <button class="btn-primary">Contact</button>
-                <button class="btn-primary">Download CV</button>
-            </div>
-            <img src="images/joy.png" alt="">
-        </div>
     </header>
-    <main>
-        <section class="about-me secondary-bg">
-            <h3 class="section-title">About Me</h3>
-            <p class="section-description">
-                I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional resulfs while working with me. Delivering work within time and budget which meets clients requirements in our mata.
-            </p>
-            <div class="about-items">
-                <div class="about-item">
-                    <p class="item-title">Name</p>
-                    <p class="item-description">Tanvir Shakil Joy</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Tanvir Shakil Joy</h1>
+                <h2 class="hero-subtitle">Computer Science & Engineering Student</h2>
+                <p class="hero-description">
+                    Computer Science and Engineering graduate with strong foundation in competitive programming, 
+                    problem-solving, computational thinking, and AI research.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="Tanvir_Shakil_Joy.pdf" class="btn btn-secondary" download>Download CV</a>
                 </div>
-                <div class="about-item">
-                    <p class="item-title">Email</p>
-                    <p class="item-description">tnvrshakil@gmail.com</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">Date of Birth</p>
-                    <p class="item-description">Sept 23, 2000</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">From</p>
-                    <p class="item-description">Rajshahi, BD</p>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/tanvir-shakil-joy-6a7249166" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Tanvir-Shakil-Joy" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
-        </section>
-        <section class="skills">
-            <h3 class="section-title">What I do</h3>
-            <p class="section-description"></p>
-        </section>
-    </main>
-</body>
+            <div class="hero-image">
+                <img src="images/joy.jpeg" alt="Tanvir Shakil Joy" class="profile-img">
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a Computer Science and Engineering student at Rajshahi University of Engineering & 
+                        Technology (RUET) with a strong foundation in competitive programming, problem-solving, 
+                        computational thinking, and AI research.
+                    </p>
+                    <p>
+                        My technical expertise spans across multiple programming languages including Python, C++, 
+                        Java, and web technologies like HTML and CSS. I have hands-on experience with frameworks 
+                        such as Django, TensorFlow, and PyTorch, which I've applied in various projects and 
+                        research endeavors.
+                    </p>
+                    <p>
+                        I am seeking an entry-level software engineering role where I can utilize my skills and 
+                        contribute to innovative team projects while continuing to grow as a professional.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <h3>Education</h3>
+                        <p><strong>Bachelor of Science in Computer Science and Engineering</strong></p>
+                        <p>Rajshahi University of Engineering & Technology (RUET)</p>
+                        <p>Expected Graduation: June 29, 2025</p>
+                        <p>CGPA: 3.36</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Contact</h3>
+                        <p><i class="fas fa-envelope"></i> tnvrshakil@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +880 1531 919876</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">REST Framework</span>
+                        <span class="skill-tag">Tkinter</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">LLM</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Object-Oriented Design</span>
+                        <span class="skill-tag">MVC Architecture</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-globe project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Rajshahi Silk Products Management Web Application</h3>
+                        <p class="project-description">
+                            Comprehensive Django-based system for silk product inventory with CRUD, REST API, 
+                            and role-based access. Features advanced search, email notifications, JWT authentication, 
+                            and responsive UI.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python 3.13</span>
+                            <span class="tech-tag">Django 5.2.4</span>
+                            <span class="tech-tag">SQLite3</span>
+                            <span class="tech-tag">Django REST Framework</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Tanvir-Shakil-Joy/Rajshahi-Silk-Products-Management-Web-Application" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-eye project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Automated Diabetic Retinopathy Detection System</h3>
+                        <p class="project-description">
+                            Real-time analysis of fundus images for binary and multi-class DR detection using 
+                            ensemble CNNs with CBAM. Deployed via an intuitive Django web app offering detailed 
+                            DR severity classification.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Tanvir-Shakil-Joy/Automated-Diabetic-Retinopathy-Detection" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="publications">
+                <h3>Publications</h3>
+                <div class="publication-card">
+                    <h4>Attention Trinity Net and DenseNet Fusion: Revolutionizing American Sign Language Recognition for Inclusive Communication</h4>
+                    <p>2023 26th International Conference on Computer and Information Technology (ICCIT)</p>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10440975" target="_blank" class="publication-link">
+                        <i class="fas fa-external-link-alt"></i> IEEE Xplore
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <h2 class="section-title">Competitive Programming Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Codeforces</h3>
+                    <p>597 problems solved</p>
+                    <p>Peak Rating: 1235 – Pupil</p>
+                    <a href="https://codeforces.com/profile/T.S.Joy" target="_blank" class="achievement-link">View Profile</a>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <p>154 problems solved</p>
+                    <p>Rating: 1454, Top 60.97%</p>
+                    <a href="https://leetcode.com/u/tsjoy/" target="_blank" class="achievement-link">View Profile</a>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>HackerRank</h3>
+                    <p>Silver Badge – 4-Star</p>
+                    <a href="https://www.hackerrank.com/profile/tsjoy" target="_blank" class="achievement-link">View Profile</a>
+                </div>
+            </div>
+            <div class="contest-highlights">
+                <h3>Contest Highlights</h3>
+                <ul>
+                    <li>Top 400 – SRBD Code Contest 2024</li>
+                    <li>Top 3000 – Google Kickstart 2022 (Round C)</li>
+                    <li>Ranked 2192 globally in Codeforces Round 861 (Div. 2)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>tnvrshakil@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+880 1531 919876</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Rajshahi, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://linkedin.com/in/tanvir-shakil-joy-6a7249166" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Tanvir-Shakil-Joy" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+            <div class="reference">
+                <h3>Reference</h3>
+                <div class="reference-card">
+                    <p><strong>Utsha Das</strong></p>
+                    <p>Assistant Professor, Department of CSE, RUET</p>
+                    <p>Email: <a href="mailto:utsha.das@cse.ruet.ac.bd">utsha.das@cse.ruet.ac.bd</a></p>
+                    <p>Phone: +880 1826 526004</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Tanvir Shakil Joy. All Rights Reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/tanvir-shakil-joy-6a7249166" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Tanvir-Shakil-Joy" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
