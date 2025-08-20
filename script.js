@@ -93,7 +93,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 70,
+                top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
         }
@@ -102,7 +102,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Add animation to elements when they come into view
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.project-card, .achievement-card, .skill-category, .info-item');
+    const elements = document.querySelectorAll('.project-card, .achievement-card, .skill-category, .info-card, .contact-method, .highlight-item');
     
     elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
@@ -116,7 +116,7 @@ const animateOnScroll = () => {
 };
 
 // Set initial styles for animation
-document.querySelectorAll('.project-card, .achievement-card, .skill-category, .info-item').forEach(element => {
+document.querySelectorAll('.project-card, .achievement-card, .skill-category, .info-card, .contact-method, .highlight-item').forEach(element => {
     element.style.opacity = '0';
     element.style.transform = 'translateY(20px)';
     element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -147,4 +147,16 @@ window.addEventListener('load', () => {
     const heroTitle = document.querySelector('.hero-title');
     const originalText = heroTitle.textContent;
     typeWriter(heroTitle, originalText, 100);
+});
+
+// Add header background on scroll
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 100) {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+        header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+    } else {
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    }
 });
