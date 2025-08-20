@@ -264,7 +264,7 @@ body {
 
 .hero-socials {
     display: flex;
-    gap: 15px;
+    gap: 18px;
     flex-wrap: wrap;
 }
 
@@ -284,6 +284,10 @@ body {
     background-color: var(--primary-color);
     color: var(--white);
     transform: translateY(-3px);
+}
+
+.social-icon {
+    margin-right: 23px;
 }
 
 .hero-image {
