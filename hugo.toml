@@ -1,0 +1,119 @@
+baseURL = "https://portfolio.pages.dev/"
+languageCode = "en-us"
+title = "Tanvir Shakil Joy | Software Engineer"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  title = "Tanvir Shakil Joy"
+  description = "Portfolio of Tanvir Shakil Joy — Junior Software Engineer at TechnoNext Software Ltd. Full-stack developer experienced in Ruby on Rails, Spring Boot, Go, Python, and Docker."
+  keywords = ["Tanvir Shakil Joy", "Software Engineer", "Portfolio", "Full Stack Developer", "Ruby on Rails", "Spring Boot", "Go", "Python"]
+  author = "Tanvir Shakil Joy"
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = false
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+
+  [params.profileMode]
+    enabled = true
+    title = "Tanvir Shakil Joy"
+    subtitle = "Junior Software Engineer · TechnoNext Software Ltd."
+    imageUrl = "/images/joy.jpeg"
+    imageWidth = 160
+    imageHeight = 160
+    imageTitle = "Tanvir Shakil Joy"
+
+    [[params.profileMode.buttons]]
+      name = "Experience"
+      url = "/experience/"
+    [[params.profileMode.buttons]]
+      name = "Projects"
+      url = "/projects/"
+    [[params.profileMode.buttons]]
+      name = "Achievements"
+      url = "/achievements/"
+    [[params.profileMode.buttons]]
+      name = "Resume"
+      url = "/resume/Tanvir_Shakil_Joy.pdf"
+
+  [params.homeInfoParams]
+    Title = "Tanvir Shakil Joy"
+    Content = "Junior Software Engineer with strong foundations in data structures, algorithms, and full-stack development. Active competitive programmer experienced in Python, Go, Ruby on Rails, Spring Boot, Docker, and REST APIs, with hands-on R&D work on scalable web applications and project management systems."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Tanvir-Shakil-Joy"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/tanvir-shakil-joy-6a7249166"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:tnvrshakil@gmail.com"
+  [[params.socialIcons]]
+    name = "phone"
+    url = "tel:+8801531919876"
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.assets]
+    favicon = "/images/joy.jpeg"
+    favicon16x16 = "/images/joy.jpeg"
+    favicon32x32 = "/images/joy.jpeg"
+    apple_touch_icon = "/images/joy.jpeg"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience/"
+    weight = 3
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 4
+  [[menu.main]]
+    identifier = "achievements"
+    name = "Achievements"
+    url = "/achievements/"
+    weight = 5
+  [[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 6
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
